@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
-import { createClient, createAdminClient } from '@/lib/supabase/server'
+import { createClient, createAdminClient } from '../../../lib/supabase/server'
 
 export async function POST(req: NextRequest) {
   const supabase = createClient()
